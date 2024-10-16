@@ -8,11 +8,11 @@ This workflow requires [jq](https://jqlang.github.io/jq/) to function. Can be in
 
 ## Usage
 
-Search for your [Firefox](https://www.mozilla.org/firefox/) bookmarks using the `bm` keyword.
+Search for your [Firefox](https://www.mozilla.org/firefox/new) bookmarks using the `bm` keyword.
 
 ![Searching for Firefox bookmarks](Workflow/images/about/keyword.png)
 
-Type to refine your search. Bookmarks are always filtered by Name, while filtering by URL, Tags, Keyword, and site description are configurable from the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+Type to refine your search. Bookmarks are always filtered by Name, while filtering by URL, Tags, Keyword, and bookmark description are configurable from the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
 
 ![Narrowing search for Firefox bookmarks](Workflow/images/about/tagFilter.png)
 
@@ -22,7 +22,7 @@ Type to refine your search. Bookmarks are always filtered by Name, while filteri
 * <kbd>⌘</kbd><kbd>L</kbd> View all tags and full URL in Large Type
 * <kbd>⇧</kbd> Hold to show bookmark description
 
-Firefox Development Edition and Nightly builds are also supported and [configurable](https://www.alfredapp.com/help/workflows/user-configuration/). The Workflow's icon colours will change based on the selected Release Channel.
+Firefox Developer Edition and Nightly builds are also supported and [configurable](https://www.alfredapp.com/help/workflows/user-configuration/). The Workflow's icon colours and bookmarks will change based on the selected Release Channel.
 
 ![Searching for Firefox bookmarks using Nightly](Workflow/images/about/otherBuilds.png)
 
