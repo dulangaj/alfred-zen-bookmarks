@@ -1318,15 +1318,6 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<string>browser2</string>
 		</dict>
 	</array>
-	<key>variables</key>
-	<dict>
-		<key>firefox</key>
-		<string>Firefox Nightly</string>
-	</dict>
-	<key>variablesdontexport</key>
-	<array>
-		<string>firefox</string>
-	</array>
 	<key>version</key>
 	<string>2024.10</string>
 	<key>webaddress</key>
