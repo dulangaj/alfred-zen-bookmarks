@@ -4,7 +4,7 @@ Search Firefox bookmarks in Alfred
 
 ## Setup
 
-This workflow requires [jq](https://jqlang.github.io/jq/) to function. Can be installed via Homebrew with `brew install jq`
+This workflow requires [jq](https://jqlang.github.io/jq/) to function, which now comes preinstalled on macOS Sequoia 15.0.0 and later.
 
 ## Usage
 
@@ -17,6 +17,7 @@ Type to refine your search. Bookmarks are always filtered by Name, while filteri
 ![Narrowing search for Firefox bookmarks](Workflow/images/about/tagFilter.png)
 
 * <kbd>↩</kbd> Open bookmark in primary browser
+* <kbd>⇧</kbd><kbd>⌘</kbd><kbd>↩</kbd> Open in primary browser without closing Alfred
 * <kbd>⌘</kbd><kbd>↩</kbd> Open bookmark in secondary browser
 * <kbd>⌘</kbd><kbd>C</kbd> Copy bookmark URL
 * <kbd>⌘</kbd><kbd>L</kbd> View all tags and full URL in Large Type

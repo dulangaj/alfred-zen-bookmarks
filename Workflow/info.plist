@@ -23,6 +23,19 @@
 		</array>
 		<key>44257FFC-200D-4323-8F39-A91B0B3E4DDC</key>
 		<array/>
+		<key>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>44257FFC-200D-4323-8F39-A91B0B3E4DDC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>64D99BDC-7828-4807-8F9A-23AE224E9E39</key>
 		<array>
 			<dict>
@@ -86,6 +99,16 @@
 				<string></string>
 				<key>vitoclose</key>
 				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</string>
+				<key>modifiers</key>
+				<integer>1179648</integer>
+				<key>modifiersubtext</key>
+				<string>Open in primary browser without closing Alfred</string>
+				<key>vitoclose</key>
+				<true/>
 			</dict>
 		</array>
 		<key>E007DCBD-DBEA-4257-8AFE-2CDEA15E19BD</key>
@@ -342,6 +365,14 @@ sqlite3 -json ${bookmarks_file} ${sqlQuery} | jq -s \
 			<string>1548B684-9B57-4C83-889B-7AB17368732A</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -893,7 +924,7 @@ EOB</string>
 	<key>readme</key>
 	<string>## Setup
 
-This workflow requires [jq](https://jqlang.github.io/jq/) to function. Can be installed via Homebrew with `brew install jq`
+This workflow requires [jq](https://jqlang.github.io/jq/) to function, which now comes preinstalled on macOS Sequoia 15.0.0 and later.
 
 ## Usage
 
@@ -906,6 +937,7 @@ Type to refine your search. Bookmarks are always filtered by Name, while filteri
 ![Narrowing search for Firefox bookmarks](images/about/tagFilter.png)
 
 * &lt;kbd&gt;↩&lt;/kbd&gt; Open bookmark in primary browser
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open in primary browser without closing Alfred
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open bookmark in secondary browser
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;C&lt;/kbd&gt; Copy bookmark URL
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;L&lt;/kbd&gt; View all tags and full URL in Large Type
@@ -951,9 +983,18 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>note</key>
 			<string>Open URL</string>
 			<key>xpos</key>
-			<real>315</real>
+			<real>450</real>
 			<key>ypos</key>
 			<real>15</real>
+		</dict>
+		<key>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>95</real>
 		</dict>
 		<key>64D99BDC-7828-4807-8F9A-23AE224E9E39</key>
 		<dict>
@@ -1319,7 +1360,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.10</string>
+	<string>2024.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-firefox-bookmarks</string>
 </dict>
