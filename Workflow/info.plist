@@ -937,7 +937,7 @@ Type to refine your search. Bookmarks are always filtered by Name, while filteri
 ![Narrowing search for Firefox bookmarks](images/about/tagFilter.png)
 
 * &lt;kbd&gt;↩&lt;/kbd&gt; Open bookmark in primary browser
-* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open in primary browser without closing Alfred
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open in primary browser without closing Alfred (when browser is in focus)
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open bookmark in secondary browser
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;C&lt;/kbd&gt; Copy bookmark URL
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;L&lt;/kbd&gt; View all tags and full URL in Large Type
