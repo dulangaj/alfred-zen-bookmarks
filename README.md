@@ -2,6 +2,8 @@
 
 Search Firefox bookmarks in Alfred
 
+[⤓ Install from the Alfred Gallery](https://alfred.app/workflows/firefingers21/firefox-bookmarks/)
+
 ## Setup
 
 This workflow requires [jq](https://jqlang.github.io/jq/) to function, which now comes preinstalled on macOS Sequoia 15.0.0 and later.
