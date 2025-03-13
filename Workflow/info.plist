@@ -416,14 +416,14 @@ cat &lt;&lt; EOB
 		$([[ -z ${(P)setting} ]] &amp;&amp; echo $currSelected)
 	},
 	{
-		"title": "Safari",
-		"arg": "com.apple.Safari",
-		$([[ ${(P)setting} == "com.apple.Safari" ]] &amp;&amp; echo $currSelected)
+		"title": "Arc",
+		"arg": "company.thebrowser.Browser",
+		$([[ ${(P)setting} == "company.thebrowser.Browser" ]] &amp;&amp; echo $currSelected)
 	},
 	{
-		"title": "Google Chrome",
-		"arg": "com.google.Chrome",
-		$([[ ${(P)setting} == "com.google.Chrome" ]] &amp;&amp; echo $currSelected)
+		"title": "Chromium",
+		"arg": "org.chromium.Chromium",
+		$([[ ${(P)setting} == "org.chromium.Chromium" ]] &amp;&amp; echo $currSelected)
 	},
 	{
 		"title": "Firefox",
@@ -431,14 +431,19 @@ cat &lt;&lt; EOB
 		$([[ ${(P)setting} == "org.mozilla.firefox" ]] &amp;&amp; echo $currSelected)
 	},
 	{
+		"title": "Google Chrome",
+		"arg": "com.google.Chrome",
+		$([[ ${(P)setting} == "com.google.Chrome" ]] &amp;&amp; echo $currSelected)
+	},
+	{
 		"title": "Microsoft Edge",
 		"arg": "com.microsoft.edgemac",
 		$([[ ${(P)setting} == "com.microsoft.edgemac" ]] &amp;&amp; echo $currSelected)
 	},
 	{
-		"title": "Arc",
-		"arg": "company.thebrowser.Browser",
-		$([[ ${(P)setting} == "company.thebrowser.Browser" ]] &amp;&amp; echo $currSelected)
+		"title": "Opera",
+		"arg": "com.operasoftware.Opera",
+		$([[ ${(P)setting} == "com.operasoftware.Opera" ]] &amp;&amp; echo $currSelected)
 	},
 	{
 		"title": "Orion",
@@ -446,9 +451,14 @@ cat &lt;&lt; EOB
 		$([[ ${(P)setting} == "com.kagi.kagimacOS" ]] &amp;&amp; echo $currSelected)
 	},
 	{
-		"title": "Opera",
-		"arg": "com.operasoftware.Opera",
-		$([[ ${(P)setting} == "com.operasoftware.Opera" ]] &amp;&amp; echo $currSelected)
+		"title": "Safari",
+		"arg": "com.apple.Safari",
+		$([[ ${(P)setting} == "com.apple.Safari" ]] &amp;&amp; echo $currSelected)
+	},
+	{
+		"title": "Zen",
+		"arg": "app.zen-browser.zen",
+		$([[ ${(P)setting} == "app.zen-browser.zen" ]] &amp;&amp; echo $currSelected)
 	}
 ]}
 EOB</string>
@@ -1270,32 +1280,40 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 						<string></string>
 					</array>
 					<array>
-						<string>Safari</string>
-						<string>com.apple.Safari</string>
+						<string>Arc</string>
+						<string>company.thebrowser.Browser</string>
 					</array>
 					<array>
-						<string>Google Chrome</string>
-						<string>com.google.Chrome</string>
+						<string>Chromium</string>
+						<string>org.chromium.Chromium</string>
 					</array>
 					<array>
 						<string>Firefox</string>
 						<string>org.mozilla.firefox</string>
 					</array>
 					<array>
+						<string>Google Chrome</string>
+						<string>com.google.Chrome</string>
+					</array>
+					<array>
 						<string>Microsoft Edge</string>
 						<string>com.microsoft.edgemac</string>
 					</array>
 					<array>
-						<string>Arc</string>
-						<string>company.thebrowser.Browser</string>
+						<string>Opera</string>
+						<string>com.operasoftware.Opera</string>
 					</array>
 					<array>
 						<string>Orion</string>
 						<string>com.kagi.kagimacOS</string>
 					</array>
 					<array>
-						<string>Opera</string>
-						<string>com.operasoftware.Opera</string>
+						<string>Safari</string>
+						<string>com.apple.Safari</string>
+					</array>
+					<array>
+						<string>Zen</string>
+						<string>app.zen-browser.zen</string>
 					</array>
 				</array>
 			</dict>
@@ -1320,32 +1338,40 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 						<string></string>
 					</array>
 					<array>
-						<string>Safari</string>
-						<string>com.apple.Safari</string>
+						<string>Arc</string>
+						<string>company.thebrowser.Browser</string>
 					</array>
 					<array>
-						<string>Google Chrome</string>
-						<string>com.google.Chrome</string>
+						<string>Chromium</string>
+						<string>org.chromium.Chromium</string>
 					</array>
 					<array>
 						<string>Firefox</string>
 						<string>org.mozilla.firefox</string>
 					</array>
 					<array>
+						<string>Google Chrome</string>
+						<string>com.google.Chrome</string>
+					</array>
+					<array>
 						<string>Microsoft Edge</string>
 						<string>com.microsoft.edgemac</string>
 					</array>
 					<array>
-						<string>Arc</string>
-						<string>company.thebrowser.Browser</string>
+						<string>Opera</string>
+						<string>com.operasoftware.Opera</string>
 					</array>
 					<array>
 						<string>Orion</string>
 						<string>com.kagi.kagimacOS</string>
 					</array>
 					<array>
-						<string>Opera</string>
-						<string>com.operasoftware.Opera</string>
+						<string>Safari</string>
+						<string>com.apple.Safari</string>
+					</array>
+					<array>
+						<string>Zen</string>
+						<string>app.zen-browser.zen</string>
 					</array>
 				</array>
 			</dict>
@@ -1360,7 +1386,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.11</string>
+	<string>2025.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-firefox-bookmarks</string>
 </dict>
