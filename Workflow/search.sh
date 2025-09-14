@@ -1,25 +1,17 @@
 #!/bin/zsh --no-rcs
 
 # Automatically Get Bookmarks Database for Default Profile
-case "${releaseChannel}" in
-	"firefox")
-		readonly versionCode="2656FF1E876E9973"
-		;;
-	"firefoxdeveloperedition")
-		readonly versionCode="1F42C145FFDD4120"
-		;;
-	"nightly")
-		readonly versionCode="31210A081F86E80E"
-		;;
-esac
-readonly defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=Profiles/ {print $2; exit}' "${HOME}/Library/Application Support/Firefox/installs.ini")
-readonly bookmarks_file="file://${HOME}/Library/Application Support/Firefox/${defaultProfile}/places.sqlite?immutable=1"
 
-readonly sqlQuery="SELECT p.id, p.url, b.title, p.description, k.keyword, JSON_GROUP_ARRAY(DISTINCT t.title) AS tag_names
+readonly releaseChannel="firefox"
+readonly versionCode="2656FF1E876E9973"
+
+readonly zenDefaultProfile=$(grep Default "${HOME}/Library/Application Support/zen/installs.ini" | cut -d"=" -f2)
+readonly bookmarks_file="${HOME}/Library/Application Support/zen/${zenDefaultProfile}/places.sqlite"
+
+readonly sqlQuery="SELECT p.id, p.url, b.title, p.description, JSON_GROUP_ARRAY(DISTINCT t.title) AS tag_names
 FROM moz_places p
 JOIN moz_bookmarks b ON b.fk = p.id
 JOIN moz_bookmarks t ON t.id = b.parent
-LEFT JOIN moz_keywords k ON p.id = k.place_id
 GROUP BY p.url;"
 
 # Load Bookmarks
